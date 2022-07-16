@@ -8,6 +8,7 @@ function saludar () {
 
 saludar();
 
+
 function tipoevento () {
 
     let evento = prompt("¿Qué tipo de evento tendrás?, Déjanos ser parte de él...").toLowerCase();
@@ -45,6 +46,25 @@ console.log(invitados)
     } else {
         alert("No contamos con ese servicio :(")
     }
+
+
+let entradaSabor = prompt("Cuál es tu sabor favorito? (escribe LISTO cuando termines tu lista)");
+ console.log (entradaSabor);
+
+    while (entradaSabor != "LISTO") {
+        alert("Escogiste: " + entradaSabor);
+        entradaSabor = prompt ("Qué otro sabor deseas?");
+        
+    }
+
+//let listaSabores = ["fresa", "vainilla", "piña" , "queso", "chocolate"]
+//console.log (listaSabores);
+    //listaSabores.unshift(entradaSabor);
+    //entradaSabor != listaSabores;
+    //alert ("el sabor que buscas no está en el catalogo de eventos"); 
+   
+    
+
 
 
 function precioFinal (invitados) {
