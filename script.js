@@ -47,24 +47,17 @@ console.log(invitados)
         alert("No contamos con ese servicio :(")
     }
 
+let listaSabores = []
+let entradaSabor = prompt("Cuál es tu sabor favorito? (escribe maximo 5 sabores y la palabra LISTO cuando termines)");
 
-let entradaSabor = prompt("Cuál es tu sabor favorito? (escribe LISTO cuando termines tu lista)");
- console.log (entradaSabor);
 
     while (entradaSabor != "LISTO") {
         alert("Escogiste: " + entradaSabor);
-        entradaSabor = prompt ("Qué otro sabor deseas?");
-        
+        listaSabores.push(entradaSabor);
+        entradaSabor = prompt ("Qué otro sabor deseas?");  
     }
 
-//let listaSabores = ["fresa", "vainilla", "piña" , "queso", "chocolate"]
-//console.log (listaSabores);
-    //listaSabores.unshift(entradaSabor);
-    //entradaSabor != listaSabores;
-    //alert ("el sabor que buscas no está en el catalogo de eventos"); 
-   
-    
-
+    console.log(listaSabores);
 
 
 function precioFinal (invitados) {
