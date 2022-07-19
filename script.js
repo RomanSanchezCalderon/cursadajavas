@@ -48,7 +48,7 @@ console.log(invitados)
     }
 
 let listaSabores = []
-let entradaSabor = prompt("Cuál es tu sabor favorito? (escribe maximo 5 sabores y la palabra LISTO cuando termines)");
+let entradaSabor = prompt("Cuál es tu sabor favorito? (escribe máximo 5 sabores y la palabra LISTO cuando termines)");
 
 
     while (entradaSabor != "LISTO") {
