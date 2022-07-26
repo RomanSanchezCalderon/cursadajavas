@@ -4,13 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciclos e Interacciones</title>
+    <link rel="stylesheet" href="/styles.css">
+    <title>TAREA</title>
 </head>
-<h1>Bienvenidos a Nevería</h1>
-<h2>El sabor de mi vida</h2>
-<img src="img/banner_nieves.png" height="200px" width="400px" >
-<h2>Llévanos a tu evento</h2>
+<h1 id="titulo">Bienvenidos a Nevería</h1>
 <body>
+  <form>
+    <select id="selectorColor" name="BackgroundChanger" onchange="colorChanger()">
+      <option value="">Escoge tu color de fondo preferido
+      <option value="pink">Rosa
+      <option value="darkseagreen">Verde
+      <option value="orange">Naranja
+   </select>
+  </form>
+  <h3 id="dummy"></h3>
+
+
+  <h2>El sabor de mi vida</h2>
+  <img src="img/banner_nieves.png" height="200px" width="400px">
+ 
+  <h2>Llévanos a tu evento</h2>
+
   <script src="./script.js"></script>  
 </body>
 </html>

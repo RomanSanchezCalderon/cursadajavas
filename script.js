@@ -1,4 +1,15 @@
 
+
+let titulo = document.querySelector("#titulo");
+titulo.style.color = "red";
+
+function colorChanger (){
+    let selectValue = document.getElementById("selectorColor").value;
+    document.getElementById("dummy").innerHTML = "Seleccionaste: " + selectValue;
+    document.body.style.backgroundColor = selectValue;
+
+}
+
 function saludar () {
 
     let nombre = prompt("Hola, ¿cuál es tu nombre?");
@@ -70,6 +81,8 @@ function precioFinal (invitados) {
 }
 
 precioFinal (invitados);
+
+
 
 
 
