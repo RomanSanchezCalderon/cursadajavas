@@ -1,7 +1,7 @@
 
 
 let titulo = document.querySelector("#titulo");
-titulo.style.color = "rgb(34, 149, 184)blue";
+titulo.style.color = "rgb(34, 149, 184)";
 
 function colorChanger (){
     let selectValue = document.getElementById("selectorColor").value;
