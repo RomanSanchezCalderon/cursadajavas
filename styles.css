@@ -1,14 +1,28 @@
-h1{
-    font-style: oblique;
-    font: bold;
+
+
+#titulo {
+    font-size: 65px;
+    font-style: italic;
+    font-style: bold;
+    font-size: 'Kanit', sans-serif;
 }
 
 
 h2{
+    font-size: 50px;
     color: blueviolet;
+    font-size: 'Kanit', sans-serif;
 }
 
-img{
-    align-content: center;
+img {
+    width: 100%;
 }
+
+h3{
+    font-size: 45px;
+    color: rgb(246, 250, 7);
+    font-size: 'Kanit', sans-serif;
+}
+
+
 

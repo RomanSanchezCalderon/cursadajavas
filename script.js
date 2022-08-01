@@ -1,11 +1,11 @@
 
 
 let titulo = document.querySelector("#titulo");
-titulo.style.color = "red";
+titulo.style.color = "rgb(34, 149, 184)blue";
 
 function colorChanger (){
     let selectValue = document.getElementById("selectorColor").value;
-    document.getElementById("dummy").innerHTML = "Seleccionaste: " + selectValue;
+    //document.getElementById("dummy").innerHTML = "Seleccionaste: " + selectValue;
     document.body.style.backgroundColor = selectValue;
 
 }
@@ -14,6 +14,7 @@ function saludar () {
 
     let nombre = prompt("Hola, ¿cuál es tu nombre?");
     alert( `Tu nombre es ${nombre}`);
+    localStorage.setItem("nombre",nombre);
 
 }
 
@@ -40,6 +41,8 @@ function tipoevento () {
         default: alert("Aun no contamos con la opcion para un(a) " + evento);
         break;
     }
+
+    localStorage.setItem("Evento", evento);
 }
 
 tipoevento();
@@ -57,6 +60,8 @@ console.log(invitados)
     } else {
         alert("No contamos con ese servicio :(")
     }
+
+    sessionStorage.setItem("# Invitados", invitados);
 
 let listaSabores = []
 let entradaSabor = prompt("Cuál es tu sabor favorito? (escribe máximo 5 sabores y la palabra LISTO cuando termines)");
@@ -80,7 +85,15 @@ function precioFinal (invitados) {
     
 }
 
-precioFinal (invitados);
+precioFinal(invitados);
+
+function precioIVA (){
+    let infoGuardada = sessionStorage.getItem("# Invitados");
+    let precioIva = infoGuardada * 34.8;
+    alert (`Si deseas factura, pagarás ${precioIva}`)
+}
+
+precioIVA ()
 
 
 
